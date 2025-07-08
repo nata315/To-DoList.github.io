@@ -1,0 +1,402 @@
+/*шапка*/
+header{
+  background-color: #1e202c ;
+  color:#bfc0d1;
+   letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0px 0px 5px  #7a7f94;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 125px;
+  left:0;
+  right: 0;
+  z-index: 1000;
+  top:0;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin: 0%;
+
+
+  display: flex;
+  align-items: center;
+}
+/* контейнер для логотипа и заголовка  */
+#box-3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/*логотип*/
+#img1{
+  height: 45px;
+
+}
+/**/
+/* Кнопка прокрутки */
+#scrol {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  background-color: #60519b;
+  color: #bfc0d1;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-left: auto; /* Отталкиваем кнопку вправо */
+
+  
+  visibility: hidden;
+}
+
+#scrol:hover {
+  border: 2px solid grey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+#img2 {
+  width: 100%; /* Чтобы изображение внутри кнопки заполняло её */
+  height: 100%;
+  object-fit: contain; /* Сохраняем пропорции изображения */
+}
+/*основное содержание*/
+body{
+  margin: 100px;
+  margin-top: 150px;
+  background-color: #60519b;
+  margin-right: 220px;
+  font-size: 18px;
+}
+/*первый блок с кнопками*/
+#box-1{
+  background-color: #bfc0d1;
+  background-size: auto;
+  height: 85px;
+  padding: 10px;
+  border-bottom: 20 px ;
+  display: flex;
+  justify-content: center; /* выравнивание по горизонтали */
+  align-items: center;     /* выравнивание по вертикали */
+  gap: 10px; 
+  border-radius: 10px;
+}
+/*поле ввода названия*/
+#name{
+  line-height: 40px ;
+  width: 1000px;
+
+  padding: 10px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+#name:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+#name:focus {
+  border: 2px solid grey;
+}
+/*кнопки */ 
+.but-1{
+  /*line-height: 40px;*/
+  height: 60px ;
+  width:150px;
+
+  padding: 10px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  background-color: #31323e;
+  color:#bfc0d1;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   letter-spacing: 1px;
+  font-size: 18px ;
+  
+}
+.but-1:hover {
+  border: 2px solid grey;
+  box-shadow: 0px 0px 20px -17px;
+}
+/*текст в таблице*/
+.t1{
+  display: flex;
+  justify-content: center; /* выравнивание по горизонтали */
+  align-items: center;     /* выравнивание по вертикали */
+  gap: 10px; 
+  padding: 10px;
+  color: #31323e;
+}
+/*дата*/
+#s-day {
+  padding: 5px;
+  margin-left: 0px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #31323e;
+}
+/*поле таблицы*/
+#t-summary{
+  margin-top: 10px;
+  background-color: #bfc0d1;
+  background-size: auto;
+  height: 400px;
+  padding: 10px;
+  border-bottom: 20 px ;
+  display: flex;
+  justify-content: center; /* выравнивание по горизонтали */
+  align-items: center;     /* выравнивание по вертикали */
+  gap: 10px; 
+  border-radius: 10px;
+  padding-bottom: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #31323e;
+}
+/*таблица*/
+#summary{
+  height: 250px;
+  width: 60%;
+    table-layout: fixed; 
+}
+td{
+  overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      
+}
+.name_t1{
+    overflow-x: auto;
+}
+/*поле описания*/
+#text_summary{
+  height: 250px;
+  width: 99%;
+  resize: none;
+}
+/*2й блок кнопок*/
+.box-2{
+  background-size: auto;
+  height: 85px;
+  padding: 10px;
+  border-bottom: 20 px ;
+  display: flex;
+  justify-content: center; /* выравнивание по горизонтали */
+  align-items: center;     /* выравнивание по вертикали */
+  gap: 10px; 
+  border-radius: 10px;
+}
+/*боковая панель*/
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  right: 0;
+  top: 125px;
+  padding: 10px;
+  padding-right: 50px;
+  background-color: #31323e;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     color:#bfc0d1;
+
+}
+.sidebar div {
+  padding: 8px;
+  font-size: 24px;
+  display: block;
+}
+/*тб со старыми значкниями*/
+#old{
+  border: 3px ;
+  margin-right: 20px;
+  margin-left: 0%;
+  color: #bfc0d1;
+}
+/*поле со старыми значениями*/
+.t3{
+  padding:4px;
+  font-size: 15px;  
+  height: 300px;    
+  background: transparent; /* Прозрачный фон */
+  border: none;   
+  color : #bfc0d1;
+  resize: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+letter-spacing: 1px;
+}
+#ex2{
+  font-size: 1 px;
+}
+/*кнопка для очистки значений*/
+#del_all{
+  height: 30 px;
+  width: 20 px;
+
+  margin-left: 30%;
+  margin-top: 10%;
+   padding: 10px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  background-color: #31323e;
+  color:#bfc0d1;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   letter-spacing: 1px;
+  font-size: 18px ;
+
+
+}
+#del_all:hover {
+  border: 2px solid grey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+
+
+/*адоптация под инткерфейс мобильный*/
+@media (max-width: 650px) {
+    /*шапка*/
+  header{
+    height: 100px;
+  }
+  #scrol{
+     visibility:visible;
+  }
+  /*основное содержание*/
+  body{
+    margin: 30px;
+    margin-top: 130px;
+    /*margin-right: 220px;*/
+    font-size: 18px;
+  }
+
+  /*поле ввода названия*/
+  #name{
+    line-height: 40px ;
+    width: 500px;
+    outline: none;
+
+  }
+  /*кнопки */ 
+  .but-1{
+    height: 50px ;
+    width:90px;
+    font-size: 12px ;
+    
+  }
+  /*текст в таблице*/
+  .t1{
+    padding: 5px;
+    font-size: 12px ;
+  }
+  
+  /*поле таблицы*/
+  #t-summary{
+    margin-top: 10px;
+    background-size: auto;
+    height: 400px;
+    padding: 5px;
+    border-bottom: 20 px ;
+  }
+  /*таблица*/
+  #summary{
+    height: 250px;
+      width: 95%;
+    table-layout: fixed; 
+    margin: 5 px;
+  }
+  /*дата*/
+  #s-day{
+    padding: 0 px;
+    margin-left: 0 px ;
+    font-size: 10 px;
+    margin: 0 px;
+    margin-right: 70%;
+  }
+  .sidebar {
+  top: 100px;
+  padding: 10px;
+  padding-right: 50px;
+    visibility : hidden ;
+  }
+  .box-2{
+    font-size: 10px;
+  }
+  #green{
+  width: 110px;
+  }
+  #red{
+    width: 110px;
+  }
+  #save{
+    width: 85px;
+  }
+  #delete{
+    width: 70px;
+  }
+
+}
+@media (max-width: 360px) {
+  body{
+    margin: 5px;
+    margin-top: 130px;
+      padding: 1 px;
+  }
+
+   #name{
+    line-height: 40px ;
+    width: 100px;
+    outline: none;
+
+  }
+ #s-day{
+    padding: 0 px;
+    margin-left: auto ;
+    font-size: 3 px;
+    margin: 0 px;
+     display: block;
+  }
+   /*поле таблицы*/
+  #t-summary{
+    margin-top: 10px;
+    background-size: auto;
+    height: 400px;
+    padding: 4 px;
+    border-bottom: 20 px ;
+  }
+  /*таблица*/
+  #summary{
+    height: 250px;
+    width: 95%;
+    table-layout: fixed; 
+    margin: 1 px;
+  }
+  #name1{
+    font-size: 20px;
+    margin: 10%;
+  }
+  #status{
+    font-size: 20px;
+    margin: 10%;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+  margin-left: 0;       /* Убирает отступ слева от иконки */
+  padding: 0;          /* Убирает внутренний отступ */
+  cursor: pointer;     /* Делает курсор "указательным" */
+}
+}

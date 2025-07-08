@@ -1,0 +1,66 @@
+<!--To-Do List-->
+
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href= "to_do_list.css">
+       <link rel="icon" href="https://img.icons8.com/?size=100&id=1oCzW5wrKSjd&format=png&color=000000">
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">-->
+    </head>
+    
+    <header>
+        <div id="box-3">
+        <img id="img1" src="https://img.icons8.com/?size=100&id=1oCzW5wrKSjd&format=png&color=000000">
+        <h1>To-Do List</h1>
+        </div>
+        <button id="scrol" type="button" ><img id="img2" src="https://img.icons8.com/?size=100&id=40217&format=png&color=000000"></button>
+    </header>
+    <body>
+        <div id="box-1">
+        <input id="name" type="text" placeholder="Введите название задачи"></input>
+        <button id="search" class="but-1" type="button">Найти и открыть</button>
+        <button id="create" class="but-1"  type="button">Создать</button>
+        </div>
+        <div id="t-summary">
+        <table id = "summary" border="1" >
+            <caption><P class ="t2"></P>Описание задачи</P></caption>
+            <tr>
+                <td ><input id="s-day" required="" type="date" ></td>
+                <td><div class="name_t1"><snap id="name1" class ="t1" >Название</snap></div></td><!--изменить на название из кнопки-->
+                <td ><snap id="status" class ="t1" >Статус</snap></td><!--изменить на статус из кнопки-->
+            </tr>
+            <tr>
+                <td height="200" colspan="3">
+                    <textarea id="text_summary" placeholder="Введите описание задачи" ></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+        <form class="box-2" >
+            <input id="save" class="but-1" type="button" value="Сохранить">
+            <button id="green"  class="but-1" type="button">Отметить выполнение</button>
+            <input id="delete"  class="but-1" type="reset" value="Удалить"></input>
+            <button id="red" class="but-1" type="button">Отменить выполнение</button>
+        </form>
+
+        <div id="sidebar" class="sidebar">
+            <table id="old" border="1">
+                <caption><P class ="t2">Старые задачи</P></caption>
+                <tr>
+                   <td><snap id="date2" class ="t3" >дата</snap></td> 
+                   <td><snap id="title2" class ="t3" >название</snap></td>
+                   <td><snap id="status2" class ="t3" >статус</snap></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><textarea id="ex2" class ="t3" readonly placeholder="нет задач"></textarea></td>
+                </tr>
+            </table>
+            <button id="del_all"  type="button">Удалить всё</button>
+        </div>
+         <script src="to_do_list.js"></script>
+    </body>
+    
+    
+</html>
